@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="/style.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+<title>zadanie3.1-3.4</title>
+</head>
+<script src="jquery-2.1.0.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('#knop').on('click',function(){
+		$('#rez').load('/zadanie3?chislo1='+$('#raki').val()+'&chislo2='+$('#raki2').val()+'&flag=1');
+	});	
+}
+		); 
+</script>
+<script>
+$(document).ready(function(){
+$('#knop2').on('click',function(){
+		$('#rez2').load('/zadanie3?chislo3='+$('#raki3').val()+'&chislo4='+$('#raki4').val()+'&chislo5='+$('#raki5').val()+'&flag=2');
+			});
+}
+		); 
+</script>
+<script>
+$(document).ready(function(){
+$('#knop3').on('click',function(){
+		$('#rez3').load('/zadanie3?flag=3');
+			});
+$('#knop4').on('click',function(){
+		$('#rez3').load('/zadanie3?flag=4');
+		});						
+}
+		); 
+</script>
+<script>
+$(document).ready(function(){
+$('#knop5').on('click',function(){
+		$('#rez4').load('/zadanie3?flag=5');
+			});
+$('#knop6').on('click',function(){
+		$('#rez4').load('/zadanie3?flag=6');
+		});						
+}
+		); 
+</script>
+  <body>
+  <div class="wrapper">
+  <div class="main">
+  <p class="info"></a></p>
+  <div>	
+    	<h3 >Задание 3.1<br>Найдем близжайшее к 10 число:</h3> 
+
+    			<input type="text" placeholder="первое число" style="width:120px" id="raki">
+    			<input type="text" placeholder="второе число" style="width:120px" id="raki2">
+    			<input type="button" value="Посчитать" id="knop">
+    			<div class="otv" id="rez"> близжайшее </div>
+   		</div>
+   		<div> 
+    	<h3 >Задание 3.2<br>Найдем корни уравнения</h3>
+    			<input type="text" placeholder="a" style="width:78px" style=" id="raki3">
+    			<input type="text" placeholder="b" style="width:78px" id="raki4">
+    			<input type="text" placeholder="c" style="width:78px" id="raki5">
+    			<input type="button" value="Посчитать" id="knop2">
+    			<div class="otv" id="rez2"> корни </div>	
+    	</div>
+    	<div> 
+    	<h3 style="color:#ddd"> Задание 3.3<br>Срандомить массив</h3>
+    			<input type="button" value="нарендомливание" id="knop3"  >
+    			<input type="button" value="контрнарендомливание" id="knop4">
+    			<div class="otv" id="rez3">  </div>	
+    	</div>
+    	<div  > 
+    	<h3 style="color:#fff"> Задание 3.4<br>Срендомить массив и найти максимальный элемент</h3>
+    			<input type="button" value="нарендомливание" id="knop5"  >
+    			<input type="button" value="контрнарендомливание" id="knop6">
+    			<div class="otv" id="rez4">  </div>	
+    			</div>
+    <p><a href="/index.html" class="knopkaBack">к заданиям</a></p>
+    </div>
+<p class="credit">Follow me<a href="http://vk.com" class="icon-vk">Follow me</a> <a href="https://github.com/Hohol05" class="icon-github-circled"></a></a></p>
+</div>
+</body>
+
+</html>
